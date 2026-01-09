@@ -6,7 +6,7 @@ from services.pdf.loader import extract_text_from_pdf
 
 MODEL_NAME = "llama-text-embed-v2"
 BATCH_SIZE = 96
-API_KEY = "pcsk_49ba8T_L92EfsyhsKc1jU5srd8WHZRkrL2MpPFBmynbtVGLBpZCrFz6PA2Vxqq62N8gS9N"  
+API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  
 INDEX_NAME = "mcp-server"
 DIMENSION = 1024
 
@@ -94,4 +94,5 @@ def _embed_and_upsert(records, pc, index, namespace):
     ]
 
     index.upsert(vectors=vectors, namespace=namespace)
+
 
