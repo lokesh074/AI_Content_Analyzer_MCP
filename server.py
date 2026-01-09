@@ -172,8 +172,9 @@ async def pdf_qa(pdf_info: dict,question: str,ctx:Context) -> str:
         str: Answer generated from the PDF content.
     """
 
-    await ctx.debug(f"QA Request | Type: {processing_type} | Q: {question}")
+    
     processing_type = pdf_info['processing_type']
+    await ctx.debug(f"QA Request | Type: {processing_type} | Q: {question}")
     try:
         if processing_type == "simple":
             return _pdf_qa_simple(question, pdf_info)
@@ -357,3 +358,4 @@ def get_file_content(filename: str) -> str:
 
 if __name__ == "__main__":
     mcp.run()
+
