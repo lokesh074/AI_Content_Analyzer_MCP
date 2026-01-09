@@ -7,7 +7,7 @@ from utils import llm_call
 
 MODEL_NAME = "llama-text-embed-v2"
 BATCH_SIZE = 96
-API_KEY = "pcsk_49ba8T_L92EfsyhsKc1jU5srd8WHZRkrL2MpPFBmynbtVGLBpZCrFz6PA2Vxqq62N8gS9N"  
+API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  
 INDEX_NAME = "mcp-server"
 DIMENSION = 1024
 
@@ -119,4 +119,5 @@ def _qa_from_web(question: str, content: str) -> str:
         return response
 
     except Exception as e:
+
         return f"Error in simple Q&A: {str(e)}"
